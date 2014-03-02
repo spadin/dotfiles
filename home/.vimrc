@@ -1,34 +1,30 @@
 set nocompatible
-filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+" setup vundle
+source .vimrc.d/setup_vundle.vim
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
-
-syntax enable
+" colors and indentation
 filetype plugin indent on
+syntax enable
 
-set laststatus=2
-set noshowmode
-set nowrap
-set nonumber
+" general settings
+set expandtab
 set hlsearch
 set ignorecase
-set smartcase
-set splitright
-set splitbelow
-set smartindent
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set ttyfast
-set mouse=a
-set ttymouse=xterm2
+set laststatus=2
 set lazyredraw
+set mouse=a
+set nonumber
+set noshowmode
+set nowrap
+set shiftwidth=2
+set smartcase
+set smartindent
+set splitbelow
+set splitright
+set tabstop=2
+set ttyfast
+set ttymouse=xterm2
 
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
