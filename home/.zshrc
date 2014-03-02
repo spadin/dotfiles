@@ -22,3 +22,6 @@ source ./.zshrc.d/aliases.zsh
 
 # add homebrew path
 export PATH=/usr/local/bin:$PATH
+
+# initialize rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
