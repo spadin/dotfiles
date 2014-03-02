@@ -1,0 +1,33 @@
+[user]
+	name = Sandro Padin
+	email = sandropadin@gmail.com
+[github]
+	user = spadin
+[core]
+	quotepath = false
+	excludesfile = /Users/sandropadin/.gitignore
+[alias]
+	co = checkout
+	l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	unstage = reset HEAD
+	current-branch = !git symbolic-ref -q HEAD | sed -e 's|^refs/heads/||'
+
+	# Zip archive of current branch
+	zip = !sh -c 'git archive --format zip --output $1 `git rev-parse --symbolic-full-name --abbrev-ref HEAD`' -
+
+	ignore = !git update-index --assume-unchanged
+	unignore = !git update-index --no-assume-unchanged
+	ignored = !git ls-files -v | grep ^[a-z]
+[apply]
+	whitespace = warn
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[help]
+	autocorrect = 1
+[status]
+	submodule = 1
+[push]
+	default = current
