@@ -6,8 +6,8 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
-Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
 
 syntax enable
 filetype plugin indent on
