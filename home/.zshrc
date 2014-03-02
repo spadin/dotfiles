@@ -12,3 +12,9 @@ compinit
 
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u' 
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
+
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/helpfiles
+
+source ./.zshrc.d/theme.zsh
