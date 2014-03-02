@@ -1,7 +1,7 @@
 set nocompatible
 
 " setup vundle
-source .vimrc.d/setup_vundle.vim
+source ~/.vimrc.d/setup_vundle.vim
 
 " colors and indentation
 filetype plugin indent on
