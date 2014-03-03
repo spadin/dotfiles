@@ -24,3 +24,6 @@ alias be='bundle exec'
 # ls with colors
 alias ls='ls --color'
 alias ll='ls --color -alhu'
+
+# start postgres
+alias pgstart='postgres -D /usr/local/var/postgres'
