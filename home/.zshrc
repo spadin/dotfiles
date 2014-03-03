@@ -28,3 +28,6 @@ export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 
 # initialize rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# directory colors
+eval `dircolors $HOME/.dir_colors`

@@ -20,3 +20,7 @@ alias ggpush='git push origin $(current_branch)'
 
 # bundle alias
 alias be='bundle exec'
+
+# ls with colors
+alias ls='ls --color'
+alias ll='ls --color -alhu'
