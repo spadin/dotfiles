@@ -34,3 +34,5 @@
 	default = current
 [credential]
 	helper = osxkeychain
+[hub]
+	protocol = https
