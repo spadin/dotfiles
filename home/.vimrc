@@ -9,14 +9,17 @@ colorscheme solarized
 
 " colors and indentation
 filetype plugin indent on
-syntax enable
+syntax on
 
 " general settings
 set expandtab
 set hlsearch
 set ignorecase
+set incsearch
 set laststatus=2
 set lazyredraw
+set ls=2
+set modeline
 set mouse=a
 set nonumber
 set noshowmode
