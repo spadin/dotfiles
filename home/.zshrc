@@ -59,3 +59,9 @@ setopt IGNORE_EOF
 # i can typez mysefl
 unsetopt CORRECT
 unsetopt CORRECT_ALL
+
+# docker  setup
+export DOCKER_HOST=tcp://localhost:4243
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
