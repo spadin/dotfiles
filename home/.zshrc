@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+export EDITOR=vim
+
 # defines the homeshick function
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
