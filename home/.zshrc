@@ -68,5 +68,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # tmuxifier setup
 export PATH="$HOME/.tmuxifier/bin:$PATH"
-eval "$(tmuxifier init -)"
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier.d"
+eval "$(tmuxifier init -)"
