@@ -33,8 +33,19 @@ set tabstop=2
 set ttyfast
 set ttymouse=xterm2
 
+" highlight extra whitespace and remove it on save
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+autocmd BufWritePre     *.rb     :call TrimWhiteSpace()
+autocmd BufWritePre     *.coffee :call TrimWhiteSpace()
 
 " remap shifted keys
 command WQ wq
