@@ -65,3 +65,7 @@ export DOCKER_HOST=tcp://localhost:4243
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# tmuxifier setup
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"
