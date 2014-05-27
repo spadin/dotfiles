@@ -21,6 +21,7 @@ HELPDIR=/usr/local/share/zsh/helpfiles
 
 source $HOME/.zshrc.d/theme.zsh
 source $HOME/.zshrc.d/aliases.zsh
+source $HOME/.zshrc.d/functions.zsh
 
 # add homebrew path
 export PATH=/usr/local/sbin:$PATH
