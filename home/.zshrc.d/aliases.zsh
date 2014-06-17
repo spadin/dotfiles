@@ -27,3 +27,6 @@ alias ll='ls --color -alhu'
 
 # start postgres
 alias pgstart='postgres -D /usr/local/var/postgres'
+
+# start redis-server
+alias redstart='redis-server /usr/local/etc/redis.conf'
