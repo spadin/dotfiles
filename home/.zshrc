@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-export EDITOR=vim
-
 # defines the homeshick function
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
@@ -12,7 +10,7 @@ fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
 autoload -U compinit
 compinit
 
-zstyle ':completion:*:descriptions' format '%U%B%d%b%u' 
+zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
 unalias run-help
@@ -73,3 +71,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier.d"
 eval "$(tmuxifier init -)"
+
+export EDITOR=vim
