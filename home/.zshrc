@@ -73,3 +73,4 @@ export TMUXIFIER_LAYOUT_PATH="$HOME/.tmuxifier.d"
 eval "$(tmuxifier init -)"
 
 export EDITOR=vim
+bindkey -e
