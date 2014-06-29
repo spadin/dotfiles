@@ -17,9 +17,7 @@ unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 
-source $HOME/.zshrc.d/theme.zsh
-source $HOME/.zshrc.d/aliases.zsh
-source $HOME/.zshrc.d/functions.zsh
+for config_file ($HOME/.zshrc.d/*.zsh) source $config_file
 
 # add homebrew path
 export PATH=/usr/local/sbin:$PATH
