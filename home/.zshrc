@@ -13,8 +13,11 @@ compinit
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 
-unalias run-help
-autoload run-help
+if [ -x run-help ]; then
+  unalias run-help
+  autoload run-help
+fi
+
 HELPDIR=/usr/local/share/zsh/helpfiles
 
 for config_file ($HOME/.zshrc.d/*.zsh) source $config_file
@@ -24,7 +27,9 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 
 # add coreutils path
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+if [ -x brew ]; then
+  export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+fi
 
 # initialize rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
