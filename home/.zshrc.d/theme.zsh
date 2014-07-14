@@ -89,7 +89,7 @@ add-zsh-hook precmd steeef_precmd
 
 PROMPT=$'
 %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_
-$ '
+(%{$orange%}%m%{$reset_color%}) $ '
 
 #PROMPT=$'
 #%{$purple%}%n%{$reset_color%} at %{$orange%}%m%{$reset_color%} in %{$limegreen%}%~%{$reset_color%} $vcs_info_msg_0_
