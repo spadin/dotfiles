@@ -27,7 +27,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:$PATH
 
 # add coreutils path
-if [ -x brew ]; then
+if [ `uname` = "Darwin" ]; then
   export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 fi
 
