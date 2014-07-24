@@ -78,3 +78,8 @@ eval "$(tmuxifier init -)"
 
 export EDITOR=vim
 bindkey -e
+
+# Set JAVA_HOME on OS X
+if [ `uname` = "Darwin" ]; then
+  export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+fi
