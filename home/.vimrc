@@ -3,10 +3,6 @@ set nocompatible
 " setup vundle
 source ~/.vimrc.d/setup_vundle.vim
 
-" Set the colorscheme to solarized.
-set background=dark
-colorscheme solarized
-
 " colors and indentation
 filetype plugin indent on
 syntax on
