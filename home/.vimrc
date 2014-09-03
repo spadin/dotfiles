@@ -66,6 +66,7 @@ command QA qa
 
 " ctrl-p settings
 let g:ctrlp_map = '<c-t>'
+let g:ctrlp_user_command = 'ag %s -f -l --nocolor -g ""'
 set wildignore+=build
 
 " rspec shortcuts
