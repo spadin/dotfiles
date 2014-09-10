@@ -46,6 +46,8 @@ autocmd BufWritePre     *.coffee :call TrimWhiteSpace()
 " speclj lispwords
 autocmd FileType clojure setlocal lispwords+=describe,it,context,around
 
+" set markdown ft
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " remap shifted keys
 command WQ wq
