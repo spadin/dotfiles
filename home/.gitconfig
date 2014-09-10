@@ -25,6 +25,8 @@
 	branch = auto
 	diff = auto
 	status = auto
+[color "diff"]
+  meta = yellow normal
 [help]
 	autocorrect = 1
 [status]
