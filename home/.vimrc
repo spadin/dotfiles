@@ -44,7 +44,8 @@ autocmd BufWritePre     *.rb     :call TrimWhiteSpace()
 autocmd BufWritePre     *.coffee :call TrimWhiteSpace()
 
 " speclj lispwords
-autocmd FileType clojure setlocal lispwords+=describe,it,context,around,should=,should-not=
+autocmd FileType clojure setlocal lispwords+=describe,it,context,around
+
 
 " remap shifted keys
 command WQ wq
