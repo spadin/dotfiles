@@ -59,6 +59,7 @@ command QA qa
 
 " my keybindings
 :inoremap jk <Esc>
+:inoremap jj <Esc>
 :noremap <F2> :NERDTreeToggle<CR>
 :nmap <leader>r :NERDTreeFind<CR>
 :nnoremap <Esc><Esc> :nohl<CR>
