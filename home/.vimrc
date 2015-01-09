@@ -19,6 +19,7 @@ set modeline
 set mouse=a
 set nonumber
 set noshowmode
+set noswapfile
 set nowrap
 set shiftwidth=2
 set smartcase
@@ -87,3 +88,5 @@ let g:vim_markdown_folding_disabled=1
 command! -nargs=1 Silent
 \ | execute ':silent !'.<q-args>
 \ | execute ':redraw!'
+
+hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
