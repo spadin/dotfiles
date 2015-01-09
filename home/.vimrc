@@ -6,6 +6,7 @@ source ~/.vimrc.d/setup_vundle.vim
 " colors and indentation
 filetype plugin indent on
 syntax on
+colorscheme summerfruit256
 
 " general settings
 set expandtab
