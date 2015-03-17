@@ -30,6 +30,7 @@ set splitright
 set tabstop=2
 set ttyfast
 set ttymouse=xterm2
+set backspace=2
 
 " highlight extra whitespace and remove it on save
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -91,3 +92,7 @@ command! -nargs=1 Silent
 \ | execute ':redraw!'
 
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
+
+" vim-fireplace bindings
+nnoremap <C-e> :Eval<CR>
+nnoremap E :%Eval<CR>

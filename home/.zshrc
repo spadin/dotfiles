@@ -65,9 +65,6 @@ setopt IGNORE_EOF
 unsetopt CORRECT
 unsetopt CORRECT_ALL
 
-# docker  setup
-export DOCKER_HOST=tcp://localhost:4243
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
@@ -83,3 +80,13 @@ bindkey -e
 if [ `uname` = "Darwin" ]; then
   export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 fi
+
+# add local python bin to PATH
+export PATH="$PATH:/Users/sandropadin/Library/Python/2.7/bin"
+
+# add ~/.bin
+export PATH="$PATH:$HOME/.bin"
+
+# add go config
+export GOPATH="$HOME/code/go"
+export PATH="$PATH:$GOPATH/bin"
