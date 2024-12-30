@@ -14,11 +14,7 @@
                                         "optional": ["any"]
                                     }
                                 },
-                                "to": [
-                                    {
-                                        "shell_command": "open -g 'raycast://'"
-                                    }
-                                ],
+                                "to": [{ "shell_command": "open -g 'raycast://'" }],
                                 "type": "basic"
                             }
                         ]
@@ -27,31 +23,21 @@
                         "description": "Map Command+Control+Option+F to Raycast Maximize Window",
                         "manipulators": [
                             {
-                                "type": "basic",
                                 "from": {
                                     "key_code": "f",
                                     "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "control",
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
+                                        "mandatory": ["command", "control", "option"],
+                                        "optional": ["any"]
                                     }
                                 },
-                                "to": [
-                                    {
-                                        "shell_command": "open -g 'raycast://extensions/raycast/window-management/maximize'"
-                                    }
-                                ]
+                                "to": [{ "shell_command": "open -g 'raycast://extensions/raycast/window-management/maximize'" }],
+                                "type": "basic"
                             }
                         ]
                     }
                 ]
             },
-            "name": "Default profile",
+            "name": "Default",
             "selected": true,
             "simple_modifications": [
                 {
