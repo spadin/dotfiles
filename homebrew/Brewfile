@@ -1,0 +1,18 @@
+tap "homebrew/cask"
+
+cask "1password"
+cask "google-chrome"
+cask "logseq"
+cask "chatgpt"
+cask "alacritty"
+cask "ghostty"
+cask "nordvpn"
+cask "raycast"
+cask "parallels"
+cask "cursor"
+cask "visual-studio-code"
+cask "spotify"
+
+brew "stow"
+brew "git"
+brew "jq"
