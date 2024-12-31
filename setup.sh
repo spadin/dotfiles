@@ -20,6 +20,7 @@ stow git
 stow karabiner
 stow terminal
 stow zsh
+stow alacritty
 
 # Setup Karabiner by generating karabiner.json from karabiner.edn
 goku
