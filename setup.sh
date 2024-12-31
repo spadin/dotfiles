@@ -29,7 +29,7 @@ goku
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Put dock on the right-side of the screen and autohide it
-defaults write com.apple.dock "orientation" -string "left"
+defaults write com.apple.dock "orientation" -string "right"
 defaults write com.apple.dock "autohide" -bool "true"
 
 # Only show open applications in the dock
