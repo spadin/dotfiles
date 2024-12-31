@@ -22,3 +22,6 @@ stow terminal
 
 # Setup Karabiner by generating karabiner.json from karabiner.edn
 goku
+
+# Disable accented character suggestions and enables key repeat
+defaults write -g ApplePressAndHoldEnabled -bool false

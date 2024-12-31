@@ -16,9 +16,3 @@ Open the following apps to setup and accept the various permission prompts
 * Raycast
 * 1Password
 * Google Chrome
-
-## Disable accented character suggestions and enables key repeat
-
-```
-defaults write -g ApplePressAndHoldEnabled -bool false
-```
