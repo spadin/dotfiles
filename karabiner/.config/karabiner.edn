@@ -7,6 +7,8 @@
          ;; window management
         {:des "control+option+command+return_or_enter to maximize"
          :rules [[:!CTOreturn_or_enter "open -g 'raycast://extensions/raycast/window-management/maximize'"]]}
+        {:des "control+option+command+c to center"
+         :rules [[:!CTOc "open -g 'raycast://extensions/raycast/window-management/center-half'"]]}
         {:des "control+option+command+left_arrow to left half"
          :rules [[:!CTOleft_arrow "open -g 'raycast://extensions/raycast/window-management/left-half'"]]}
         {:des "control+option+command+right_arrow to right half"
