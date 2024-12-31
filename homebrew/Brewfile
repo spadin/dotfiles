@@ -17,6 +17,7 @@ brew "gh"
 brew "git"
 brew "jq"
 brew "stow"
+brew "starship"
 
 tap "yqrashawn/goku"
 brew "yqrashawn/goku/goku"
