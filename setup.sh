@@ -25,9 +25,6 @@ stow terminal
 stow zsh
 stow alacritty
 
-# Setup Karabiner by generating karabiner.json from karabiner.edn
-goku
-
 # Disable accented character suggestions and enables key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
 
@@ -49,3 +46,10 @@ defaults write com.apple.dock wvous-bl-corner -int 4
 
 # Restart Dock
 killall Dock
+
+# Create a karabiner.json file with a default profile used by goku
+mkdir -p ~/.config/karabiner
+echo '{"profiles": [{"name": "Default", "selected": true}]}' > ~/.config/karabiner/karabiner.json
+
+# Setup Karabiner by generating karabiner.json from karabiner.edn
+goku
