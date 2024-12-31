@@ -14,9 +14,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Homebrew bundle
 brew bundle --file=~/dotfiles/homebrew/Brewfile
 
+# Configure git
+git config --global user.name "Sandro Padin"
+git config --global user.email "sandropadin@gmail.com"
+
 # Stow dotfiles
 cd ~/dotfiles
-stow git
 stow karabiner
 stow terminal
 stow zsh
