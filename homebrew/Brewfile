@@ -20,3 +20,6 @@ brew "stow"
 
 tap "yqrashawn/goku"
 brew "yqrashawn/goku/goku"
+
+vscode "esbenp.prettier-vscode"
+vscode "vscodevim.vim"
