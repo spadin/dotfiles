@@ -1,0 +1,13 @@
+{:main [;; general
+        {:des "caps lock to control"
+         :rules [[:caps_lock :left_control]]}
+        {:des "command+spacebar to raycast"
+         :rules [[:!Cspacebar "open -g 'raycast://'"]]}
+
+         ;; window management
+        {:des "control+option+command+return_or_enter to maximize"
+         :rules [[:!CTOreturn_or_enter "open -g 'raycast://extensions/raycast/window-management/maximize'"]]}
+        {:des "control+option+command+left_arrow to left half"
+         :rules [[:!CTOleft_arrow "open -g 'raycast://extensions/raycast/window-management/left-half'"]]}
+        {:des "control+option+command+right_arrow to right half"
+         :rules [[:!CTOright_arrow "open -g 'raycast://extensions/raycast/window-management/right-half'"]]}]}
