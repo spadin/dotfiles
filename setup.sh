@@ -19,6 +19,7 @@ cd ~/dotfiles
 stow git
 stow karabiner
 stow terminal
+stow zsh
 
 # Setup Karabiner by generating karabiner.json from karabiner.edn
 goku
