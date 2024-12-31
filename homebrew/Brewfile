@@ -13,6 +13,8 @@ cask "raycast"
 cask "spotify"
 cask "visual-studio-code"
 
+cask "font-fira-code-nerd-font"
+
 brew "gh"
 brew "git"
 brew "jq"
