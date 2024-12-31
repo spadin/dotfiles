@@ -5,7 +5,7 @@
 Run the following command to install Homebrew and dotfiles
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/spadin/dotfiles/main/setup.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/spadin/dotfiles/HEAD/setup.sh)"
 ```
 
 ## Manual Steps
