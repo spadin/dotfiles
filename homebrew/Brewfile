@@ -20,6 +20,7 @@ brew "git"
 brew "jq"
 brew "stow"
 brew "starship"
+brew "tmux"
 
 tap "yqrashawn/goku"
 brew "yqrashawn/goku/goku"
