@@ -1,12 +1,16 @@
 #! /bin/bash
 
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! command -v brew &> /dev/null; then
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 # Clone dotfiles
-cd ~
-git clone https://github.com/spadin/dotfiles.git
-cd dotfiles
+if [ ! -d ~/dotfiles ]; then
+  cd ~
+  git clone https://github.com/spadin/dotfiles.git
+fi
+cd ~/dotfiles
 
 # Load Homebrew in current shell
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -20,10 +24,10 @@ git config --global user.email "sandropadin@gmail.com"
 
 # Stow dotfiles
 cd ~/dotfiles
-stow karabiner
-stow terminal
-stow zsh
-stow alacritty
+stow --restow karabiner
+stow --restow terminal
+stow --restow zsh
+stow --restow alacritty
 
 # Disable accented character suggestions and enables key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -49,7 +53,9 @@ killall Dock
 
 # Create a karabiner.json file with a default profile used by goku
 mkdir -p ~/.config/karabiner
-echo '{"profiles": [{"name": "Default", "selected": true}]}' > ~/.config/karabiner/karabiner.json
+if [ ! -f ~/.config/karabiner/karabiner.json ]; then
+  echo '{"profiles": [{"name": "Default", "selected": true}]}' > ~/.config/karabiner/karabiner.json
+fi
 
 # Setup Karabiner by generating karabiner.json from karabiner.edn
 goku
