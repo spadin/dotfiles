@@ -21,6 +21,8 @@ brew "jq"
 brew "stow"
 brew "starship"
 brew "tmux"
+brew "nvim"
+brew "ripgrep"
 
 tap "yqrashawn/goku"
 brew "yqrashawn/goku/goku"
