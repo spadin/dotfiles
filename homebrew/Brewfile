@@ -23,6 +23,7 @@ brew "starship"
 brew "tmux"
 brew "nvim"
 brew "ripgrep"
+brew "tree"
 
 tap "yqrashawn/goku"
 brew "yqrashawn/goku/goku"
