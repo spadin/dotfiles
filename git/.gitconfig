@@ -1,0 +1,14 @@
+[user]
+  name = Sandro Padin
+  email = sandropadin@gmail.com
+[core]
+  quotepath = false
+  excludesfile = ~/.gitignore
+[alias]
+  l = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+[apply]
+  whitespace = warn
+[help]
+  autocorrect = 1
+[credential]
+    helper = /usr/local/share/gcm-core/git-credential-manager
