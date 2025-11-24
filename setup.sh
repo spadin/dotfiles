@@ -18,16 +18,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # Homebrew bundle
 brew bundle --file=~/dotfiles/homebrew/Brewfile
 
-# Configure git
-git config --global user.name "Sandro Padin"
-git config --global user.email "sandropadin@gmail.com"
-
 # Stow dotfiles
 cd ~/dotfiles
 stow --restow karabiner
 stow --restow terminal
 stow --restow zsh
 stow --restow alacritty
+stow --restow git
 
 # Disable accented character suggestions and enables key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
