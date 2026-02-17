@@ -22,9 +22,10 @@ brew bundle --file=~/dotfiles/homebrew/Brewfile
 cd ~/dotfiles
 stow --restow karabiner
 stow --restow terminal
-stow --restow zsh
+stow --restow --no-folding zsh
 stow --restow alacritty
 stow --restow git
+stow --restow tmux
 
 # Disable accented character suggestions and enables key repeat
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -56,3 +57,6 @@ fi
 
 # Setup Karabiner by generating karabiner.json from karabiner.edn
 goku
+
+# Install TPM (Tmux Plugin Manager)
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
