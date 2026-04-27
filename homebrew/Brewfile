@@ -15,6 +15,7 @@ cask "visual-studio-code"
 
 cask "font-fira-code-nerd-font"
 
+brew "direnv"
 brew "gh"
 brew "git"
 brew "jq"
@@ -28,6 +29,9 @@ brew "tree"
 
 tap "yqrashawn/goku"
 brew "yqrashawn/goku/goku"
+
+tap "sdkman/tap"
+brew "sdkman/tap/sdkman-cli"
 
 vscode "esbenp.prettier-vscode"
 vscode "vscodevim.vim"
