@@ -24,7 +24,7 @@ stow --restow karabiner
 stow --restow terminal
 stow --restow --no-folding zsh
 stow --restow alacritty
-stow --restow git
+stow --restow --no-folding git
 stow --restow tmux
 
 # Disable accented character suggestions and enables key repeat
@@ -57,6 +57,11 @@ fi
 
 # Setup Karabiner by generating karabiner.json from karabiner.edn
 goku
+
+# Configure git
+git config --global user.name "Sandro Padin"
+git config --global user.email "sandropadin@gmail.com"
+git config --global include.path ~/.gitconfig-shared
 
 # Install TPM (Tmux Plugin Manager)
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
