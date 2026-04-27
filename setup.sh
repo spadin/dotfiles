@@ -63,5 +63,6 @@ git config --global user.name "Sandro Padin"
 git config --global user.email "sandropadin@gmail.com"
 git config --global include.path ~/.gitconfig-shared
 
-# Install TPM (Tmux Plugin Manager)
+# Install TPM (Tmux Plugin Manager) and plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 2>/dev/null || true
+~/.tmux/plugins/tpm/bin/install_plugins
